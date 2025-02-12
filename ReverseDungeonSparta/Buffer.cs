@@ -6,7 +6,7 @@
         public List<(double, int)>  AttackBuff          { get; set; } = new();
         public List<(double, int)>  DefenceBuff         { get; set; } = new();
         public List<(int, int)>     LuckBuff            { get; set; } = new();
-        public List<(double, int)>  HealingBuff         { get; set; } = new();
+        public List<(int, int)>  HealingBuff         { get; set; } = new();
         public List<(int, int)>     IntelligenceBuff    { get; set; } = new();
 
 
@@ -133,10 +133,11 @@
         //전투가 끝난 후 모든 버프를 해제하는 메서드
         public void ResetAllBuff()
         {
-            AttackBuff = new List<(double, int)>();
-            DefenceBuff = new List<(double, int)>();
-            LuckBuff = new List<(int, int)>();
-            HealingBuff = new List<(int, int)>();
+            AttackBuff = new ();
+            DefenceBuff = new ();
+            LuckBuff = new ();
+            HealingBuff = new ();
+            IntelligenceBuff = new();
         }
 
 
